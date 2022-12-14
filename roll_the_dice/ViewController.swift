@@ -22,13 +22,10 @@ class ViewController: UIViewController {
 
     @IBAction func rollButtonPressed(_ sender: UIButton) {
         
-        var nRandom1 = Int.random(in: 0...5)
-        var nRandom2 = Int.random(in: 0...5)
-
        var imageArr = [UIImage(imageLiteralResourceName: "DiceOne"),UIImage(imageLiteralResourceName: "DiceTwo"),UIImage(imageLiteralResourceName: "DiceThree"),UIImage(imageLiteralResourceName: "DiceFour"),UIImage(imageLiteralResourceName: "DiceFive"),UIImage(imageLiteralResourceName: "DiceSix")]
         
-        diceImageView1.image = imageArr[nRandom1]
-        diceImageView2.image = imageArr[nRandom2]
+        diceImageView1.image = imageArr[Int.random(in: 0...5)]
+        diceImageView2.image = imageArr[Int.random(in: 0...5)]
     }
 }
 
